@@ -19,6 +19,8 @@
 #ifndef RGBMATRIXPANEL_H
 #define RGBMATRIXPANEL_H
 
+#include "Arduino.h"
+
 #if ARDUINO >= 100
 #include "Arduino.h"
 #else

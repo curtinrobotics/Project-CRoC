@@ -999,8 +999,16 @@ portEXIT_CRITICAL(&timer_spinlock[TIMER_GROUP_1]);
     pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew
         pew pew pew pew pew pew pew pew pew pew pew pew pew
 
-        if (WIDTH == 64) {
+        if (WIDTH >= 64) {
       pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew
+          pew pew pew pew pew pew pew pew pew pew pew pew pew pew
+    }
+    if( WIDTH == 128 )
+    {
+      pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew
+          pew pew pew pew pew pew pew pew pew pew pew pew pew pew
+
+     pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew pew
           pew pew pew pew pew pew pew pew pew pew pew pew pew pew
     }
 

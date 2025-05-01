@@ -9,13 +9,13 @@ NOTE: This codes works; it has been tested; DO NOT CHANGE IT
 #include "RGBmatrixPanel.h" // Hardware-specific library
 
 // Connect ALL pins listed below to an Arduino Mega
-#define CLK 11
-#define OE  9
-#define LAT 10
-#define A   A0
-#define B   A1
-#define C   A2
-#define D   A3
+//#define CLK 11
+//#define OE  9
+//#define LAT 10
+//#define A   A0
+//#define B   A1
+//#define C   A2
+//#define D   A3
 // R1: 24
 // G1: 25
 // B1: 26
@@ -23,7 +23,16 @@ NOTE: This codes works; it has been tested; DO NOT CHANGE IT
 // G2: 28
 // B2: 29
 
-RGBmatrixPanel matrix(A, B, C, D, CLK, LAT, OE, false, 64);
+// Connect ALL pins listed below to an ESP32
+#define CLK 14
+#define OE  0
+#define LAT 22
+#define A   19
+#define B   23
+#define C   18
+#define D   5
+
+RGBmatrixPanel matrix(A, B, C, D, CLK, LAT, OE, false, 128);
 
 void setup() {
 
